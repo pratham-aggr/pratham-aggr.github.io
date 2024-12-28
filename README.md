@@ -73,20 +73,33 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
   Top 20% ranking among 4,500 finalists
 
 ---
-
 ## Projects
 
-Here are a few projects I've worked on:
+### 1. **Energy Efficiency Prediction and Analysis**
+   - **Description**: This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
+   - **Skills Used**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
+   - **Find out more**: [Link to Project] 
 
-### 1. **[Project Name](link-to-project)**
-A brief description of your project, what technologies were used, and any important outcomes.  
-- Tools: Python, Jupyter, Pandas, TensorFlow
-- Description: This project involves building a recommendation system for e-commerce platforms based on user behavior.
+---
 
-### 2. **[Project Name](link-to-project)**
-Another brief description of a different project.  
-- Tools: SQL, Tableau, R
-- Description: Analyzing customer churn rates using statistical methods to predict future retention.
+### 2. **Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**
+   - **Description**: This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
+   - **Skills Used**: Computational Modeling, Astrophysics, Data Visualization
+   - **Find out more**: [Link to Project]
+
+---
+
+### 3. **Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot**
+   - **Description**: Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
+   - **Skills Used**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
+   - **Find out more**: [Link to Project]
+
+---
+
+### 4. **TSwift Tunes: Data-Driven Insights and Recommender Systems**
+   - **Description**: Analyzed Taylor Swiftâ€™s music catalog to uncover trends, relationships between audio features, and emotional tone. Developed a song recommender system and a lyrics search tool using TF-IDF for text mining.
+   - **Skills Used**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
+   - **Find out more**: [GitHub Repository](https://github.com/prathamaggarwal7586/TSwift-Tunes)
 
 ---
 
