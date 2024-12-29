@@ -9,7 +9,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Projects
 
-### [**Energy Efficiency: Prediction and Analysis**]()
+### [**Energy Efficiency: Prediction and Analysis**](https://pratham-aggr.github.io/Energy-Efficiency/)
    - **Description**: This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
    - **Skills Used**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
    - **Find out more**: [Link to Project] 
