@@ -1,8 +1,8 @@
 title: "Pratham Aggarwal"
 logo: "/assets/img/pp.png"
-#show_downloads: true
+# show_downloads: true
 
-Education:
+education:
   university: "University of California, San Diego (UCSD)"
   degree: "Bachelor of Science in Data Science"
   gpa: "4.0"
