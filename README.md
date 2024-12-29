@@ -9,13 +9,13 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Projects
 
-### [**Energy Efficiency Prediction and Analysis**]()
+### [**Energy Efficiency: Prediction and Analysis**]()
    - **Description**: This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
    - **Skills Used**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
    - **Find out more**: [Link to Project] 
 
 
-### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**]()
+### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
    - **Description**: This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
    - **Skills Used**: Computational Modeling, Astrophysics, Data Visualization
    - **Find out more**: [Link to Project]
