@@ -59,12 +59,6 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - Authored a research paper based on 12 weeks of study.
 - Mentored by PhD candidate Matthew Scoggins, Columbia University.  
   [View Research Paper](link-to-paper)
-
-### **Facial Expression Recognition Drone Project**  
-**Inspire Award, Government of India & National Innovation Foundation (NIF)** | 2020  
-- Engineered a facial expression recognition drone using DroneKit and OpenCV for mood prediction and automated accident detection.
-- Presented the model design and e-pitch to the district government for prompt emergency alerts.
-
 ---
 
 ## Honors & Awards
