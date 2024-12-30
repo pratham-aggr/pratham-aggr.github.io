@@ -67,11 +67,11 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Skills
 
-- **Programming Languages**: Python, R, SQL, JavaScript, HTML/CSS
-- **Data Science Tools**: Pandas, NumPy, Scikit-learn, TensorFlow, Keras, Spark
-- **Data Visualization**: Matplotlib, Seaborn, Tableau, Power BI
+- **Programming Languages**: Python, Java
+- **Data Science Tools**: Pandas, NumPy, Scikit-learn, Scipy
+- **Data Visualization**: Matplotlib, Seaborn, Tableau
 - **Databases**: MySQL, PostgreSQL, MongoDB
-- **Other**: Git, Docker, AWS, Azure
+- **Other**: Git
 
 ---
 
