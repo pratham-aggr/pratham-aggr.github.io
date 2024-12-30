@@ -73,8 +73,6 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - **Databases**: MySQL, PostgreSQL, MongoDB
 - **Other**: Git
 
----
-
 ## Contact
 
 Feel free to reach out for any collaborations, questions, or just to connect!  
