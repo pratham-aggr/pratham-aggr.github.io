@@ -7,58 +7,54 @@ I'm a **Data Science** student at the **University of California San Diego** �
 - 🌱 **Learning Goals:** Building skills in NLP, computer vision, and advanced machine learning techniques.  
 - 🚀 **Aspiration:** To contribute to projects where AI meets real-world challenges, creating innovative solutions for unstructured data problems.  
 
-## Projects
+## Experience
 
 ### [**Energy Efficiency: Prediction and Analysis**](https://pratham-aggr.github.io/Energy-Efficiency/)
-   - **Description**: This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
-   - **Skills Used**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
-   - **Find out more**: [Link to Project] 
+   - This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
+   - **Skills**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
+- [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/), [Code](https://github.com/pratham-aggr/Energy-Efficiency)
 
 
 ### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
-   - **Description**: This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
-   - **Skills Used**: Computational Modeling, Astrophysics, Data Visualization
-   - **Find out more**: [Link to Project]
+   - This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
+   - **Skills**: Computational Modeling, Astrophysics, Data Visualization
+   - [Learn more](https://pratham-aggr.github.io/Black-Hole-Growth/), [Code](https://github.com/pratham-aggr/Black-Hole-Growth)
 
 
 ### [**Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot**](https://pratham-aggr.github.io/Rebooting-Friends/)
-   - **Description**: Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
-   - **Skills Used**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
-   - **Find out more**: [Link to Project]
-
-
+   - Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
+   - **Skills**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
+   - [Learn more](https://pratham-aggr.github.io/Rebooting-Friends/), [Code](https://github.com/pratham-aggr/Rebooting-Friends)
 
 ### [**TSwift Tunes: Data-Driven Insights and Recommender Systems**](https://pratham-aggr.github.io/TSwift-Tunes/)
-   - **Description**: Analyzed Taylor Swift’s music catalog to uncover trends, relationships between audio features, and emotional tone. Developed a song recommender system and a lyrics search tool using TF-IDF for text mining.
-   - **Skills Used**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
-   - **Find out more**: [GitHub Repository](https://github.com/prathamaggarwal7586/TSwift-Tunes)
-
-
-## Relevant Coursework
-
-- **Probability & Statistics for Machine Learning & Data Science**  
-  *DeepLearning.AI, Coursera* | Expected: July 2024
-
-- **Linear Algebra for Machine Learning & Data Science**  
-  *DeepLearning.AI, Coursera* | Expected: July 2024
-
-- **BWSI: Python Core & Version Control, Git & GitHub**  
-  *Beaver Works Summer Institute course, MIT* | June 2023
-
-- **Principles of Data Science (DSC 10)**: Data wrangling with Pandas, Exploratory Data Analysis, TF-IDF text analysis, Hypothesis Testing
-
-- **Introduction to Data Science (COGS 9)**: Web scraping with BeautifulSoup, Multi-Dimensional Linear Regression, A/B testing frameworks
+   - Analyzed Taylor Swift’s music catalog to uncover trends, relationships between audio features, and emotional tone. Developed a song recommender system and a lyrics search tool using TF-IDF for text mining.
+   - **Skills**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
+   - [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/), [Code](https://github.com/pratham-aggr/TSwift-Tunes)
 
 
 ## Education
 
 **Bachelor of Science in Data Science**  
-*Halıcıoğlu Data Science Institute, University of California, San Diego (UCSD)*  
+*Halıcıoğlu Data Science Institute, University of California, San Diego*  
    GPA 4.0 | Provost Honors
 
 
+## Relevant Coursework
 
+- **Principles of Data Science (DSC 10)**  
+  *UC San Diego* | Fall 2024 
 
+- **Introduction to Data Science (COGS 9)**  
+  *UC San Diego* | Fall 2024
+
+- **Probability & Statistics for Machine Learning & Data Science**  
+  *DeepLearning.AI, Coursera* | July 2024
+
+- **Linear Algebra for Machine Learning & Data Science**  
+  *DeepLearning.AI, Coursera* | July 2024
+
+- **BWSI: Python Core & Version Control, Git & GitHub**  
+  *Beaver Works Summer Institute course, MIT* | June 2023
 
 ## Experience
 
@@ -92,7 +88,6 @@ I'm a **Data Science** student at the **University of California San Diego** �
 
 ---
 
-
 ## Skills
 
 - **Programming Languages**: Python, R, SQL, JavaScript, HTML/CSS
@@ -102,12 +97,6 @@ I'm a **Data Science** student at the **University of California San Diego** �
 - **Other**: Git, Docker, AWS, Azure
 
 ---
-
-## Blog
-
-Check out my blog where I post articles on data science concepts, tutorials, and project write-ups:  
-- [Blog Link](your-blog-link)
-
 
 ## Contact
 
