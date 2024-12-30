@@ -62,17 +62,9 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 ## Honors & Awards
 
 - **AP Scholar with Distinction** | 2024  
-  Issued by the College Board
-
-- **Inspire Award** | 2020  
-  Issued by Million Minds Augmenting National Aspirations and Knowledge (MANAK), Government of India & National Innovation Foundation (NIF)
-
 - **Silver Honor, International Youth Math Challenge** | 2023  
-  Top 10% ranking among 5300 finalists
-
-- **Silver Honor, International Astronomy and Astrophysics Competition** | 2023  
-  Top 20% ranking among 4,500 finalists
-
+- **Silver Honor, International Astronomy and Astrophysics Competition** | 2023
+- **Inspire Award** | 2020 
 ## Skills
 
 - **Programming Languages**: Python, R, SQL, JavaScript, HTML/CSS
