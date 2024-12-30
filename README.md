@@ -64,7 +64,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - **AP Scholar with Distinction** | 2024  
 - **Silver Honor, International Youth Math Challenge** | 2023  
 - **Silver Honor, International Astronomy and Astrophysics Competition** | 2023
-- **Inspire Award** | 2020 
+
 ## Skills
 
 - **Programming Languages**: Python, R, SQL, JavaScript, HTML/CSS
