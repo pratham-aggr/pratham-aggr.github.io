@@ -59,7 +59,6 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - Authored a research paper based on 12 weeks of study.
 - Mentored by PhD candidate Matthew Scoggins, Columbia University.  
   [View Research Paper](link-to-paper)
----
 
 ## Honors & Awards
 
@@ -74,8 +73,6 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 - **Silver Honor, International Astronomy and Astrophysics Competition** | 2023  
   Top 20% ranking among 4,500 finalists
-
----
 
 ## Skills
 
