@@ -4,18 +4,6 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Experience
 
-### [**Energy Efficiency: Prediction and Analysis**](https://pratham-aggr.github.io/Energy-Efficiency/)
-   - This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
-   - **Skills**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
-- [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/), [Code](https://github.com/pratham-aggr/Energy-Efficiency)
-
-
-### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
-   - This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
-   - **Skills**: Computational Modeling, Astrophysics, Data Visualization
-   - [Learn more](https://pratham-aggr.github.io/Black-Hole-Growth/), [Code](https://github.com/pratham-aggr/Black-Hole-Growth)
-
-
 ### [**Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot**](https://pratham-aggr.github.io/Rebooting-Friends/)
    - Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
    - **Skills**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
@@ -26,6 +14,17 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
    - **Skills**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
    - [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/), [Code](https://github.com/pratham-aggr/TSwift-Tunes)
 
+### [**Energy Efficiency: Prediction and Analysis**](https://pratham-aggr.github.io/Energy-Efficiency/)
+   - This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
+   - **Skills**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
+- [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/), [Code](https://github.com/pratham-aggr/Energy-Efficiency)
+
+
+### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
+   - This project simulates the growth of supermassive black holes using different growth models for light and heavy seeds, focusing on theoretical astrophysics and computational modeling.
+   - **Skills**: Computational Modeling, Astrophysics, Data Visualization
+   - [Learn more](https://pratham-aggr.github.io/Black-Hole-Growth/), [Code](https://github.com/pratham-aggr/Black-Hole-Growth)
+     
 
 ## Education
 
