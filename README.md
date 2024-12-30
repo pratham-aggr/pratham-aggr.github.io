@@ -61,7 +61,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Honors & Awards
 
-- **AP Scholar with Distinction Award** | 2024  
+- **AP Scholar with Distinction** | 2024  
   Issued by the College Board
 
 - **Inspire Award** | 2020  
