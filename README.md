@@ -14,7 +14,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
    - **Skills**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
    - [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/), [Code](https://github.com/pratham-aggr/TSwift-Tunes)
 
-### [**Energy Efficiency: Prediction and Analysis**](https://pratham-aggr.github.io/Energy-Efficiency/)
+### [**Predictive Modeling of Heating and Cooling Loads**](https://pratham-aggr.github.io/Energy-Efficiency/)
    - This project focuses on predicting energy efficiency based on various features, utilizing machine learning algorithms and regression models to make predictions.
    - **Skills**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
 - [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/), [Code](https://github.com/pratham-aggr/Energy-Efficiency)
