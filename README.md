@@ -4,7 +4,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Experience
 
-### [**Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot**](https://pratham-aggr.github.io/Rebooting-Friends/)
+### [**Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot** ](https://pratham-aggr.github.io/Rebooting-Friends/)
    - Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
    - **Skills**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
    - [Learn more](https://pratham-aggr.github.io/Rebooting-Friends/), [Code](https://github.com/pratham-aggr/Rebooting-Friends)
@@ -61,11 +61,9 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 
 ## Honors & Awards
 
-- **AP Scholar with Distinction** | 2024
-  
-- **Silver Honor, International Youth Math Challenge** | 2023
-  
-- **Silver Honor, International Astronomy and Astrophysics Competition** | 2023
+- **AP Scholar with Distinction | 2024**
+- **Silver Honor, International Youth Math Challenge | 2023**
+- **Silver Honor, International Astronomy and Astrophysics Competition | 2023**
 
 ## Skills
 
