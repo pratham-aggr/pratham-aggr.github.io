@@ -59,8 +59,8 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - Mentored by PhD candidate Matthew Scoggins, Columbia University.  
   [View Research Paper](link-to-paper)
 
-## Honors & Awards
 
+## Honors & Awards
 - AP Scholar with Distinction | 2024
 - Silver Honor, International Youth Math Challenge | 2023
 - Silver Honor, International Astronomy and Astrophysics Competition | 2023
