@@ -40,32 +40,19 @@ I'm a **Data Science** student at the **University of California San Diego** �
 *Halıcıoğlu Data Science Institute, University of California, San Diego*  
    GPA 4.0 | Provost Honors
 
+## Relevant Courses  
 
-## Relevant Coursework
+- **Principles of Data Science (DSC 10)**, UC San Diego — *Fall 2024*  
+  Topics: Data cleaning and preparation, exploratory data analysis, TF-IDF text analysis, hypothesis testing  
 
-- **Principles of Data Science (DSC 10)**  
-  *UC San Diego* | Fall 2024 
+- **Introduction to Data Science (COGS 9)**, UC San Diego — *Fall 2024*  
+  Topics: Web scraping, multi-dimensional linear regression, A/B testing  
 
-- **Introduction to Data Science (COGS 9)**  
-  *UC San Diego* | Fall 2024
+- **Probability & Statistics for Machine Learning & Data Science**, Coursera — *July 2024*  
 
-- **Probability & Statistics for Machine Learning & Data Science**  
-  *DeepLearning.AI, Coursera* | July 2024
+- **Linear Algebra for Machine Learning & Data Science**, DeepLearning.AI, Coursera — *July 2024*  
 
-- **Linear Algebra for Machine Learning & Data Science**  
-  *DeepLearning.AI, Coursera* | July 2024
-
-- **BWSI: Python Core & Version Control, Git & GitHub**  
-  *Beaver Works Summer Institute course, MIT* | June 2023
-
-## Experience
-
-### **Research Scholar**  
-**Lumiere Research Scholar Program** | 2023  
-- Conducted research on simulating supermassive black hole growth for different growth models.
-- Authored a research paper based on 12 weeks of study.
-- Mentored by PhD candidate Matthew Scoggins, Columbia University.  
-  [View Research Paper](link-to-paper)
+- **BWSI: Python Core & Version Control, Git & GitHub**, Beaver Works Summer Institute, MIT — *June 2023*  
 
 
 ## Honors & Awards
