@@ -9,21 +9,21 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
    - Applied sentiment analysis and Bayesian modeling to map character emotions and dynamics, informing character development and enhancing storylines for the reboot.
   - Developed a linear regression model to recommend an optimal episode count (80 episodes) for the reboot, maximizing viewer engagement and retention based on historical trends.
    - **Skills**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
-   - [Learn more](https://pratham-aggr.github.io/Rebooting-Friends/), [Code](https://github.com/pratham-aggr/Rebooting-Friends)
+   - [Learn more](https://pratham-aggr.github.io/Rebooting-Friends/) | [Code](https://github.com/pratham-aggr/Rebooting-Friends)
 
 ### [**TSwift Tunes: Data-Driven Insights and Recommender Systems**](https://pratham-aggr.github.io/TSwift-Tunes/)
 - Conducted exploratory data analysis (EDA) on Taylor Swift's discography to uncover trends, visualize audio feature relationships, analyze sentiment, and compare collaborative vs. solo tracks.
 - Built a song recommender system to suggest similar tracks based on user preferences & audio features
 - Created a TF-IDF-based lyrics search tool and keyword extraction feature to analyze and summarize song themes, focusing on the Lover album.
 - **Skills**: Data Cleaning, Data Visualization, Exploratory Data Analysis (EDA), TF-IDF for Text Mining, Song Recommendation System, Sentiment Analysis, Audio Feature Correlation, Keyword Extraction.
-- [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/), [Code](https://github.com/pratham-aggr/TSwift-Tunes)
+- [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/) | [Code](https://github.com/pratham-aggr/TSwift-Tunes)
 
 ### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
 - Simulated supermassive black hole growth using Eddington and super-Eddington models.
 - Created visualizations to analyze and contrast growth trajectory of heavy and light seed mass scenarios.
 - Conducted research under Matthew Scoggins at Columbia University
 - **Skills**: Computational Modeling, Astrophysics, Data Visualization
-- [Learn more](https://pratham-aggr.github.io/Black-Hole-Growth/), [Code](https://github.com/pratham-aggr/Black-Hole-Growth)
+- [Learn more](https://pratham-aggr.github.io/Black-Hole-Growth/) | [Code](https://github.com/pratham-aggr/Black-Hole-Growth)
 
 
 ### [**Predictive Modeling of Heating and Cooling Loads**](https://pratham-aggr.github.io/Energy-Efficiency/)
@@ -31,7 +31,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - Applied unsupervised clustering (e.g., K-means) to segment the data, improving the regression model's performance by capturing underlying patterns.
 - Employed a multidimensional linear regression model, achieving 91% accuracy in predicting energy loads, optimizing building energy efficiency predictions.
 - **Skills**: Data Preprocessing, Regression Analysis, Exploratory Data Analysis (EDA), Machine Learning
-- [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/), [Code](https://github.com/pratham-aggr/Energy-Efficiency)
+- [Learn more](https://pratham-aggr.github.io/Energy-Efficiency/) | [Code](https://github.com/pratham-aggr/Energy-Efficiency)
 
 
 ## Education
