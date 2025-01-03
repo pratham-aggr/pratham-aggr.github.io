@@ -19,7 +19,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - [Learn more](https://pratham-aggr.github.io/TSwift-Tunes/), [Code](https://github.com/pratham-aggr/TSwift-Tunes)
 
 ### [**Simulating Black Hole Evolution: Comparative Analysis of Light and Heavy Seeds**](https://pratham-aggr.github.io/Black-Hole-Growth/)
-- Simulated supermassive black hole growth using Eddington and super-Eddington models 
+- Simulated supermassive black hole growth using Eddington and super-Eddington models.
 - Created visualizations to analyze and contrast growth trajectory of heavy and light seed mass scenarios.
 - Conducted research under Matthew Scoggins at Columbia University
 - **Skills**: Computational Modeling, Astrophysics, Data Visualization
