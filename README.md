@@ -78,7 +78,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 - **Programming Languages**: Python, Java
 - **Data Science Tools**: Pandas, NumPy, Scikit-learn, Scipy
 - **Data Visualization**: Matplotlib, Seaborn, Tableau
-- **Databases**: MySQL, PostgreSQL, MongoDB
+- **Databases**: MySQL
 - **Other**: Git
 
 ## Contact
