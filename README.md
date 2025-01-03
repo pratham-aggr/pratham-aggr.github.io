@@ -7,7 +7,7 @@ I'm a **Data Science** student at the **University of California San Diego** ðŸ”
 ### [**Rebooting Friends: A Data-Driven Blueprint for the Ultimate Reboot** ](https://pratham-aggr.github.io/Rebooting-Friends/)
    - Analyzing the popular TV show *Friends* using data science techniques to create a blueprint for a potential reboot. This includes analysis of cast performance, dialogue patterns, emotional roles, storylines, and episode structure.
    - **Skills**: Exploratory Data Analysis (EDA), Data Visualization, Bootstrapping, Confidence Interval Estimation, Hypothesis Testing, Linear Regression, Probability Analysis, Bayes' Theorem Application, and N-grams Analysis.
-   - _[Learn more](https://pratham-aggr.github.io/Rebooting-Friends/), [Code](https://github.com/pratham-aggr/Rebooting-Friends)_
+   - [Learn more](https://pratham-aggr.github.io/Rebooting-Friends/), [Code](https://github.com/pratham-aggr/Rebooting-Friends)
 
 ### [**TSwift Tunes: Data-Driven Insights and Recommender Systems**](https://pratham-aggr.github.io/TSwift-Tunes/)
    - Analyzed Taylor Swiftâ€™s music catalog to uncover trends, relationships between audio features, and emotional tone. Developed a song recommender system and a lyrics search tool using TF-IDF for text mining.
