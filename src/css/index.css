@@ -108,7 +108,7 @@
     }
     
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: clamp(2rem, 6vw, 3.5rem);
       font-weight: 800;
       line-height: 1.2;
       margin-bottom: 1.5rem;
@@ -468,17 +468,20 @@
     
     @media (max-width: 768px) {
       .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       }
-      
+      .hero {
+        padding: 5rem 0 2rem;
+      }
       .hero h1 {
-        font-size: 2.5rem;
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
       }
-      
-      .mobile-menu-btn {
-        display: block;
+      .container {
+        padding: 0 10px;
       }
-      
+      .hero-content {
+        max-width: 500px;
+      }
       .nav-links {
         position: fixed;
         top: 70px;
@@ -514,6 +517,30 @@
       .section-title {
         font-size: 2rem;
       }
+      .hero {
+        padding: 2rem 0 1rem;
+      }
+      .container {
+        padding: 0 5px;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 {
+        font-size: 1.25rem;
+      }
+      .section-title {
+        font-size: 1.25rem;
+      }
+      .container {
+        padding: 0 2px;
+      }
+      .hero {
+        padding: 1rem 0 0.5rem;
+      }
     }
 
     /* Animation */
@@ -529,3 +556,20 @@
     .delay-1 { animation-delay: 0.2s; }
     .delay-2 { animation-delay: 0.4s; }
     .delay-3 { animation-delay: 0.6s; }
+
+    @media (max-width: 600px) {
+      footer {
+        padding: 1.5rem 0;
+      }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-logo {
+        margin-bottom: 1rem;
+      }
+      .social-links {
+        justify-content: center;
+      }
+    }
