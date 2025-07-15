@@ -482,7 +482,11 @@
       .hero-content {
         max-width: 500px;
       }
+      .mobile-menu-btn {
+        display: block;
+      }
       .nav-links {
+        display: none;
         position: fixed;
         top: 70px;
         left: 0;
@@ -493,13 +497,13 @@
         padding: 2rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transform: translateY(-150%);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, display 0.3s;
+        z-index: 200;
       }
-      
       .nav-links.active {
+        display: flex;
         transform: translateY(0);
       }
-      
       .nav-links li {
         margin: 1rem 0;
       }
