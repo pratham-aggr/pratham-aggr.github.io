@@ -210,6 +210,9 @@
       overflow: hidden;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 500px;
     }
     
     .project-card:hover {
@@ -221,6 +224,7 @@
       height: 200px;
       background-color: #e5e7eb;
       overflow: hidden;
+      flex-shrink: 0;
     }
     
     .project-img img {
@@ -236,12 +240,21 @@
     
     .project-content {
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 300px;
     }
     
     .project-content h3 {
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
+    }
+    
+    .project-content p {
+      margin-bottom: 1rem;
+      flex: 1;
     }
     
     .project-tech {
@@ -260,7 +273,7 @@
     }
     
     .project-links {
-      margin-top: 1rem;
+      margin-top: auto;
       display: flex;
       gap: 1rem;
     }
