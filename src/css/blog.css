@@ -1,0 +1,271 @@
+/* ============================================================
+   Blog — long-form reading layer on top of index.css tokens.
+   Reuses :root variables, fonts, nav, footer from index.css.
+   ============================================================ */
+
+/* ---------- blog index ---------- */
+.blog-head {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+.blog-head h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin-bottom: 0.9rem;
+}
+.blog-head p {
+  max-width: 52ch;
+  color: var(--ink-soft);
+  font-size: 1.16rem;
+}
+
+.post-list { padding-top: 1rem; padding-bottom: 4rem; }
+.post-link {
+  display: block;
+  padding: 2rem 0;
+  border-top: 1px solid var(--rule);
+  color: inherit;
+}
+.post-link:hover { color: inherit; }
+.post-link:hover h2 { color: var(--signal); }
+.post-link .post-kicker {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.6rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.post-link h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  margin-bottom: 0.6rem;
+  transition: color 0.18s ease;
+}
+.post-link .post-dek {
+  color: var(--ink-soft);
+  max-width: 60ch;
+  font-size: 1.08rem;
+}
+.post-link .post-more {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--signal);
+  margin-top: 0.9rem;
+}
+
+/* ---------- article ---------- */
+.article { padding-bottom: 5rem; }
+
+.article-header {
+  padding-top: 4.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 3rem;
+}
+.article-meta {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.4rem;
+}
+.article-meta .dot { color: var(--mask); }
+.article h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.1rem, 5.4vw, 3.5rem);
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+  margin-bottom: 1.1rem;
+  max-width: 18ch;
+}
+.article-dek {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+.article-byline {
+  margin-top: 1.6rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+.article-byline a { color: var(--signal); }
+
+/* reading column */
+.prose { max-width: 42rem; }
+.prose > * { margin-left: auto; margin-right: auto; }
+.prose p,
+.prose ul,
+.prose ol,
+.prose h2,
+.prose h3,
+.prose .callout,
+.prose blockquote { max-width: 42rem; }
+
+.prose p {
+  font-size: 1.16rem;
+  line-height: 1.66;
+  color: #23232b;
+  margin-bottom: 1.5rem;
+}
+.prose p .lead-cap::first-letter { font-size: 1.1em; }
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+
+.prose h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.4vw, 2rem);
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  margin-top: 3.4rem;
+  margin-bottom: 1.1rem;
+}
+.prose h2 .h2-num {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--signal);
+  display: block;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+.prose h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+.prose ul, .prose ol { margin-bottom: 1.5rem; padding-left: 1.3rem; }
+.prose li { font-size: 1.12rem; line-height: 1.6; margin-bottom: 0.5rem; color: #23232b; }
+
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.08em 0.35em;
+}
+
+/* analogy / note block */
+blockquote {
+  border-left: 3px solid var(--signal);
+  padding: 0.3rem 0 0.3rem 1.4rem;
+  margin: 2.2rem auto;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* big-number callout */
+.callout {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  margin: 2.4rem auto;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--signal);
+  border-radius: 4px;
+  background: #fff;
+}
+.callout .big {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  letter-spacing: -0.02em;
+  color: var(--signal);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.callout .big-label {
+  font-family: var(--serif);
+  color: var(--ink-soft);
+  font-size: 1.04rem;
+  line-height: 1.4;
+}
+
+/* figures — allowed to break out wider than the reading column */
+.figure {
+  margin: 2.8rem auto;
+  max-width: 56rem;
+}
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.4rem;
+}
+.figure figcaption {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-top: 0.7rem;
+  max-width: 46rem;
+}
+.figure figcaption .fig { color: var(--signal); }
+
+/* key-findings summary card */
+.summary {
+  margin: 3rem auto 0;
+  max-width: 42rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--paper-2);
+  padding: 1.8rem 1.9rem;
+}
+.summary h3 {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+.summary ol { padding-left: 1.2rem; margin: 0; }
+.summary li { font-size: 1.06rem; margin-bottom: 0.7rem; }
+
+/* end matter */
+.article-foot {
+  max-width: 42rem;
+  margin: 3.5rem auto 0;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+}
+.article-foot a { color: var(--signal); }
+.back-link {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  margin-top: 1.4rem;
+  color: var(--signal);
+}
+
+@media (max-width: 600px) {
+  .callout { flex-direction: column; gap: 0.4rem; }
+  .figure { margin: 2rem auto; }
+}
