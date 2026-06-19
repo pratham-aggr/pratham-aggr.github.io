@@ -132,7 +132,7 @@ header {
   gap: 3.5rem;
   align-items: start;
   padding-top: 5.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6.5rem;
 }
 .hero-name {
   font-family: var(--display);
@@ -206,8 +206,8 @@ header {
 
 /* ---------- generic block ---------- */
 .block {
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 5.75rem;
+  padding-bottom: 5.75rem;
   border-top: 1px solid var(--rule);
 }
 .block-title {
@@ -216,14 +216,14 @@ header {
   font-size: clamp(1.6rem, 3.4vw, 2.3rem);
   letter-spacing: -0.015em;
   line-height: 1.1;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
   max-width: 24ch;
 }
 .block-intro {
   max-width: var(--measure);
   color: var(--ink-soft);
   font-size: 1.14rem;
-  margin-bottom: 2.6rem;
+  margin-bottom: 3.2rem;
 }
 
 /* ---------- research timeline ---------- */
@@ -231,8 +231,8 @@ header {
 .entry {
   display: grid;
   grid-template-columns: 200px 1fr;
-  gap: 2.5rem;
-  padding: 2.3rem 0;
+  gap: 3rem;
+  padding: 2.9rem 0;
   border-top: 1px solid var(--rule);
 }
 .entry:first-child { border-top: none; padding-top: 0; }
@@ -264,26 +264,26 @@ header {
 }
 .tags {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 1rem;
+  display: block;
+  margin-top: 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
 }
 .tags li {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--ink-soft);
-  border: 1px solid var(--rule);
-  background: var(--paper-2);
-  padding: 0.22rem 0.55rem;
-  border-radius: 2px;
+  display: inline;
+}
+.tags li:not(:last-child)::after {
+  content: " · ";
+  color: var(--mask);
 }
 
 /* ---------- projects / cards ---------- */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem;
+  gap: 1.8rem;
 }
 .card {
   border: 1px solid var(--rule);
