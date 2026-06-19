@@ -84,18 +84,8 @@ header {
   font-size: 1.15rem;
   letter-spacing: 0.02em;
   color: var(--ink);
-  display: inline-flex;
-  align-items: center;
 }
 .mark span { color: var(--signal); }
-.mark .logo {
-  height: 30px;
-  width: 30px;
-  display: block;
-  border-radius: 50%;
-  transition: transform 0.18s ease;
-}
-.mark:hover .logo { transform: scale(1.06); }
 .nav-links {
   display: flex;
   gap: 1.9rem;
@@ -377,7 +367,6 @@ footer {
   color: var(--ink-soft);
 }
 .footer-inner .mark { font-size: 1rem; }
-.footer-inner .mark .logo { height: 26px; width: 26px; }
 
 /* ============================================================
    Responsive
