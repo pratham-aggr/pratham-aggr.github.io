@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How a 10-Neuron Network Serves 100 Features — Pratham Aggarwal</title>
-  <meta name="description" content="A tiny network has ten neurons and a hundred things to remember. The trick it learns — superposition — is the reason neurons inside real AI models are so hard to read.">
+  <title>How a 10-Neuron Network Serves 100 Features · Pratham Aggarwal</title>
+  <meta name="description" content="A tiny network has ten neurons and a hundred things to remember. The trick it learns (superposition) is the reason neurons inside real AI models are so hard to read.">
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="container nav-inner">
-      <a href="/" class="mark" aria-label="Pratham Aggarwal — home">P<span>·</span>A</a>
+      <a href="/" class="mark" aria-label="Pratham Aggarwal, home">P<span>·</span>A</a>
       <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">menu</button>
       <nav class="nav-links" aria-label="Primary">
         <a href="/#research">research</a>
@@ -40,7 +40,7 @@
       </div>
       <h1>How a 10-neuron network serves 100 features</h1>
       <p class="article-dek">
-        A tiny network shouldn't be able to do this. Here's the trick it learns — and why
+        A tiny network shouldn't be able to do this. Here's the trick it learns, and why
         that trick is the reason neurons inside real AI models are so hard to read.
       </p>
       <p class="article-byline">
@@ -52,20 +52,20 @@
     <article class="prose container">
       <p>
         Imagine you're handed a hundred things to remember, and exactly ten lockers to keep
-        them in. One thing per locker is easy — but you'd have to throw away ninety of them.
+        them in. One thing per locker is easy, but you'd have to throw away ninety of them.
         What do you do?
       </p>
       <p>
         The obvious answer is to give up gracefully: fill your ten lockers, accept that the
         other ninety are gone. But there's a stranger option. What if you smeared <em>all
-        one hundred</em> things faintly across <em>all ten</em> lockers — a little of
-        everything everywhere — so that nothing is stored perfectly, but everything is
+        one hundred</em> things faintly across <em>all ten</em> lockers, a little of
+        everything everywhere, so that nothing is stored perfectly, but everything is
         partly recoverable?
       </p>
       <p>
         That second strategy has a name in machine learning: <strong>superposition</strong>.
         It sounds like it shouldn't work. This post is about a small experiment that shows
-        not only that it works, but exactly <em>how</em> a neural network pulls it off — and
+        not only that it works, but exactly <em>how</em> a neural network pulls it off, and
         why understanding this toy is a stepping stone to understanding why the neurons
         inside real language models are so maddeningly hard to interpret.
       </p>
@@ -74,7 +74,7 @@
       <p>
         The experiment is deliberately minimal. We build a tiny network: 100 inputs, a
         single hidden layer of just <strong>10 neurons</strong>, and 100 outputs. No bias
-        terms, no shortcuts. Its only job is to copy its input to its output — to take in
+        terms, no shortcuts. Its only job is to copy its input to its output, to take in
         100 "features" and faithfully reproduce them.
       </p>
       <p>
@@ -85,14 +85,14 @@
       </p>
       <p>
         The saving grace is <strong>sparsity</strong>. In training, each of the 100 features
-        is switched on only rarely — with probability <code>p = 0.02</code>, meaning that in
+        is switched on only rarely, with probability <code>p = 0.02</code>, meaning that in
         any given example only about <em>two</em> features are active at once. The network
         never has to reconstruct all 100 things simultaneously. It just has to be ready for
         whichever few show up. That single fact, as we'll see, is what makes the impossible
         assignment possible.
       </p>
       <blockquote>
-        Ten lockers, a hundred items — but you only ever reach for two at a time. Suddenly
+        Ten lockers, a hundred items, but you only ever reach for two at a time. Suddenly
         smearing everything everywhere doesn't sound so crazy.
       </blockquote>
 
@@ -104,28 +104,28 @@
         "fill your lockers and give up" plan.
       </p>
       <p>
-        We measure quality with error — how far each reconstructed feature lands from the
+        We measure quality with error: how far each reconstructed feature lands from the
         truth (lower is better). The naive plan posts an average error of <strong>0.151</strong>.
         The trained network, given the same ten neurons but allowed to learn freely, comes
-        in at <strong>0.074</strong> — roughly half.
+        in at <strong>0.074</strong>, roughly half.
       </p>
 
       <div class="callout">
         <span class="big">90/100</span>
         <span class="big-label">features where the trained network beats the
-          "dedicate-and-give-up" baseline — at about half the average error.</span>
+          "dedicate-and-give-up" baseline, at about half the average error.</span>
       </div>
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_s1_per_feature_mse.png" alt="Bar chart of per-feature error. Ten red bars on the far left sit just above the green bars; all bars sit well below the dashed naive-baseline line.">
-        <figcaption><span class="fig">fig.1</span> — Error for each of the 100 features. Green beats the naive baseline; red doesn't. Notice the trade: the only ten features the trained model loses on (red) are features 0–9 — exactly the ones the naive plan gets for free. The network gave those up to partially cover all 100.</figcaption>
+        <figcaption><span class="fig">fig.1</span> · Error for each of the 100 features. Green beats the naive baseline; red doesn't. Notice the trade: the only ten features the trained model loses on (red) are features 0–9, exactly the ones the naive plan gets for free. The network gave those up to partially cover all 100.</figcaption>
       </figure>
 
       <p>
         That picture captures the whole bargain. The trained network sacrifices the handful
         of features it could have aced, in exchange for doing a decent job on
         <em>everything</em>. Why is that worth it? Because of how the network is scored. The
-        training loss here is <code>L4</code> — it penalizes errors raised to the fourth
+        training loss here is <code>L4</code>: it penalizes errors raised to the fourth
         power, so a single huge mistake hurts far more than many small ones. Ignoring 90
         features entirely produces 90 huge mistakes. Spreading the pain thin is, mathematically,
         the better deal.
@@ -135,30 +135,30 @@
       <p>
         So the network covers all 100 features. But what does "covering" actually look like?
         If you feed in one feature on its own and watch its output, you get a clean, simple
-        shape every time: a straight line through the origin — the right shape, just dialed
+        shape every time: a straight line through the origin, the right shape, just dialed
         down in volume.
       </p>
       <p>
         Each feature comes out scaled by a slope. A perfect copy would have slope 1.0. Across
-        all 100 features, the average slope is about <strong>0.38</strong> — every feature is
+        all 100 features, the average slope is about <strong>0.38</strong>: every feature is
         replayed at roughly 38% of full volume. The remarkable part is how little that number
         varies.
       </p>
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_slope_hist.png" alt="Histogram of per-feature slopes, tightly clustered around 0.38, far from the ideal slope of 1.0 marked in red.">
-        <figcaption><span class="fig">fig.2</span> — The "volume" each feature is replayed at, across all 100. The cluster is astonishingly tight (mean 0.38, standard deviation 0.017): no feature is above 0.8 or below 0.2. The ideal of 1.0 (red) is nowhere close.</figcaption>
+        <figcaption><span class="fig">fig.2</span> · The "volume" each feature is replayed at, across all 100. The cluster is astonishingly tight (mean 0.38, standard deviation 0.017): no feature is above 0.8 or below 0.2. The ideal of 1.0 (red) is nowhere close.</figcaption>
       </figure>
 
       <div class="callout">
         <span class="big">0.38</span>
         <span class="big-label">the single, shared "volume" the network applies to nearly
-          every feature — not favorites and afterthoughts, but one uniform faint copy of
+          every feature, not favorites and afterthoughts, but one uniform faint copy of
           everything.</span>
       </div>
 
       <p>
-        This is the first genuine surprise. You might expect the network to play favorites —
+        This is the first genuine surprise. You might expect the network to play favorites,
         serving some features loud and clear while neglecting others. It doesn't. It learned
         one democratic compromise and applied it almost identically to all 100. Earlier plots
         of a few "best" and "worst" features looked different, but that was a trick of small
@@ -176,7 +176,7 @@
         Some are <em>cooperative</em>: turning on one feature gives a few others a small free
         boost toward their correct value. Others are <em>destructive</em>: the strongest one
         found here, activating feature 12, actively <em>suppresses</em> feature 15's output.
-        That's not harmless dilution — it's one feature stepping on another.
+        That's not harmless dilution: it's one feature stepping on another.
       </p>
       <p>
         Here's the twist that makes the whole scheme survive: remember that only about two
@@ -194,11 +194,11 @@
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_s3_weight_matrix.png" alt="A 100x100 heatmap with a strong dark-red diagonal line and a faint speckled red-and-blue background everywhere else.">
-        <figcaption><span class="fig">fig.3</span> — The effective input-to-output map. The bright diagonal is each feature routing to itself (the signal). The faint speckle filling the rest of the square is the cross-term interference — spread evenly, with no clumps or blocks.</figcaption>
+        <figcaption><span class="fig">fig.3</span> · The effective input-to-output map. The bright diagonal is each feature routing to itself (the signal). The faint speckle filling the rest of the square is the cross-term interference, spread evenly, with no clumps or blocks.</figcaption>
       </figure>
 
       <p>
-        Two things stand out. First, this grid has a <strong>rank of exactly 10</strong> — a
+        Two things stand out. First, this grid has a <strong>rank of exactly 10</strong>, a
         precise mathematical fingerprint that the network is using every last scrap of its
         ten-neuron budget, holding nothing in reserve. Second, look at how much of the grid
         is <em>off</em> the diagonal. Add up all that interference and it's nearly
@@ -208,7 +208,7 @@
       <div class="callout">
         <span class="big">24.9×</span>
         <span class="big-label">more total interference than signal in the weights. On a
-          dense input this would be hopeless — sparsity is the only reason reconstruction
+          dense input this would be hopeless: sparsity is the only reason reconstruction
           works at all.</span>
       </div>
 
@@ -216,7 +216,7 @@
         Then comes the most elegant result in the whole study. You'd guess that the features
         suffering the most error are the ones absorbing the most interference. So we checked
         whether a feature's "interference load" predicts its error. The correlation is
-        <strong>0.10</strong> — essentially nothing.
+        <strong>0.10</strong>, essentially nothing.
       </p>
       <p>
         Why? Because every feature receives almost exactly the same amount of interference.
@@ -229,26 +229,26 @@
       <h2><span class="h2-num">part 5</span>Every neuron is a generalist</h2>
       <p>
         Now to the question that connects this toy to the real world. In a network we can
-        interpret, each neuron would mean something — "this one detects feature 7." A neuron
+        interpret, each neuron would mean something: "this one detects feature 7." A neuron
         like that is called <strong>monosemantic</strong>: one neuron, one meaning. The
-        opposite — a neuron that's a little bit involved in everything — is
+        opposite, a neuron that's a little bit involved in everything, is
         <strong>polysemantic</strong>, and those are the ones that make AI models so hard to
         decode.
       </p>
       <p>
         So which kind did our ten neurons become? We can score each one from 1 (perfectly
         monosemantic) to near 0 (fully spread out). All ten neurons land between
-        <strong>0.05 and 0.08</strong> — about as polysemantic as it is possible to be.
+        <strong>0.05 and 0.08</strong>, about as polysemantic as it is possible to be.
       </p>
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_weight_profiles_sorted.png" alt="Three plots of sorted connection strengths for three neurons. Each declines as a slow, smooth curve with no sharp drop-off.">
-        <figcaption><span class="fig">fig.4</span> — Each neuron's connection strengths, sorted from strongest to weakest, for three sample neurons. There's no cliff and no dominant feature — just a slow slide. The single strongest feature claims only ~3% of a neuron's weight; the top ten together capture barely a quarter.</figcaption>
+        <figcaption><span class="fig">fig.4</span> · Each neuron's connection strengths, sorted from strongest to weakest, for three sample neurons. There's no cliff and no dominant feature, just a slow slide. The single strongest feature claims only ~3% of a neuron's weight; the top ten together capture barely a quarter.</figcaption>
       </figure>
 
       <p>
         With a generous definition of "connected," every neuron touches nearly 90 of the 100
-        features. The ten neurons are essentially interchangeable — ten identical generalists,
+        features. The ten neurons are essentially interchangeable: ten identical generalists,
         each doing a faint slice of everything. There is no neuron you could point to and say
         "that one is for feature 42." And that is the whole problem with interpreting neurons
         in miniature: the network's knowledge isn't stored <em>in</em> the neurons, it's
@@ -257,7 +257,7 @@
 
       <h2><span class="h2-num">part 6</span>How gracefully does it break?</h2>
       <p>
-        The network was trained on sparse inputs — about two features at a time. What happens
+        The network was trained on sparse inputs, about two features at a time. What happens
         when we overload it and switch on more at once? If the destructive collisions
         compounded, we'd expect a sudden cliff. Instead, the error rises in an almost perfectly
         straight line as the load increases.
@@ -265,13 +265,13 @@
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_s5_loss_vs_k.png" alt="Two line plots. Left: trained error rises smoothly and linearly with the number of active features while the naive baseline stays flat and higher. Right: the trained/naive ratio climbs but never reaches 1.0.">
-        <figcaption><span class="fig">fig.5</span> — Pushing past the training regime. As more features fire at once, the trained network's error grows linearly (a near-perfect straight-line fit), not explosively. Even at ten times its training density it stays 26% ahead of the naive baseline and never falls behind.</figcaption>
+        <figcaption><span class="fig">fig.5</span> · Pushing past the training regime. As more features fire at once, the trained network's error grows linearly (a near-perfect straight-line fit), not explosively. Even at ten times its training density it stays 26% ahead of the naive baseline and never falls behind.</figcaption>
       </figure>
 
       <p>
         That straight line is reassuring: each extra active feature adds a roughly constant
         dose of noise rather than triggering a chain reaction. The shared strategy degrades,
-        but it degrades <em>politely</em> — and it stays ahead of the give-up baseline even
+        but it degrades <em>politely</em>, and it stays ahead of the give-up baseline even
         when badly overloaded.
       </p>
 
@@ -280,12 +280,12 @@
         One last test. Weights tell us what a neuron is connected to, but not what it
         actually <em>does</em>, because the network's nonlinearity can let a neuron influence
         features it's barely wired to. So we go causal: silence one neuron, see which features
-        get worse — and which, tellingly, get <em>better</em>.
+        get worse, and which, tellingly, get <em>better</em>.
       </p>
 
       <figure class="figure">
         <img src="/assets/blog/superposition/fig_s6_ablation_heatmap.png" alt="A heatmap with 10 rows (neurons) and 100 columns (features), speckled red and blue, showing each neuron helps some features and hurts others, with no obvious structure.">
-        <figcaption><span class="fig">fig.6</span> — Switching off each neuron, one at a time. Red means a feature got worse (the neuron was helping); blue means it got better (the neuron was interfering). Every single neuron does both — it helps some features only by quietly hurting others.</figcaption>
+        <figcaption><span class="fig">fig.6</span> · Switching off each neuron, one at a time. Red means a feature got worse (the neuron was helping); blue means it got better (the neuron was interfering). Every single neuron does both: it helps some features only by quietly hurting others.</figcaption>
       </figure>
 
       <p>
@@ -295,7 +295,7 @@
         on some toes as the price of covering others.
       </p>
       <p>
-        Finally, we asked whether the neurons secretly team up — whether pairs of them gang up
+        Finally, we asked whether the neurons secretly team up, whether pairs of them gang up
         to damage the same features, which would hint at some higher-level organization.
         Comparing every pair's "damage list," the typical overlap is just
         <strong>0.20</strong>. Any two neurons hurt almost entirely different sets of features.
@@ -303,7 +303,7 @@
 
       <div class="callout">
         <span class="big">~0.20</span>
-        <span class="big-label">overlap between any two neurons' damage — close to what
+        <span class="big-label">overlap between any two neurons' damage, close to what
           you'd get from ten independent random assignments. No cliques, no hidden hierarchy,
           just evenly scattered generalists.</span>
       </div>
@@ -319,7 +319,7 @@
       <p>
         This is a deliberately tiny model, but it's a clear window into something that happens
         in the enormous ones. Real language models also have far more concepts to represent
-        than they have neurons, and they appear to lean on the same trick — packing many
+        than they have neurons, and they appear to lean on the same trick, packing many
         features into shared, overlapping directions. That's a big part of why a single neuron
         in a large model so rarely corresponds to a single clean idea. The meaning lives in the
         superposition. If we want to read what these models are thinking, this little ten-neuron
@@ -329,12 +329,12 @@
       <div class="summary">
         <h3>The six findings, in brief</h3>
         <ol>
-          <li>Every neuron is polysemantic — encoding all 100 features faintly, not a few features loudly.</li>
+          <li>Every neuron is polysemantic, encoding all 100 features faintly, not a few features loudly.</li>
           <li>Each feature comes back as a scaled copy at ~38% volume, nearly identical across all 100.</li>
-          <li>The folded weight map uses all 10 neurons (rank 10), with ~25× more interference than signal — survivable only because inputs are sparse.</li>
+          <li>The folded weight map uses all 10 neurons (rank 10), with ~25× more interference than signal, survivable only because inputs are sparse.</li>
           <li>Gradient descent rediscovered the classic "tied weights" solution on its own, with the decoder ~13% stronger than the encoder.</li>
           <li>Error grows linearly as more features activate, and beats the give-up baseline even at ten times the training density.</li>
-          <li>Every neuron helps some features by hurting others, and those interference footprints are spread independently — no hidden clusters.</li>
+          <li>Every neuron helps some features by hurting others, and those interference footprints are spread independently, with no hidden clusters.</li>
         </ol>
       </div>
 
@@ -345,12 +345,12 @@
         favorites. Sweeping the sparsity should reveal the exact tipping point where sharing
         stops paying off and giving up wins. Making some features matter more than others
         should crack the perfect fairness and force real structure to appear. Each of those is
-        a clean experiment — and each one tells us a little more about the rules that govern
+        a clean experiment, and each one tells us a little more about the rules that govern
         how networks decide what to remember.
       </p>
 
       <div class="article-foot">
-        Built and analyzed in a single notebook —
+        Built and analyzed in a single notebook:
         <a href="https://colab.research.google.com/drive/1yUAGtnTA8rvHFbVvQp0qpXew5qNWbCFr?usp=sharing" target="_blank" rel="noopener">open the Colab ↗</a>
         · read the full
         <a href="/assets/blog/superposition/technical-writeup.pdf" target="_blank" rel="noopener">technical write-up (PDF) ↗</a>
