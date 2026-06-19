@@ -1,6 +1,6 @@
 /* ============================================================
    Pratham Aggarwal — academic homepage
-   Identity: Space Grotesk · Prose: Newsreader · Data: Space Mono
+   Type: Geist (display + body) · Geist Mono (labels / data)
    Theme: denoising / unmasking. Signal = plasma-colormap magenta.
    ============================================================ */
 
@@ -14,9 +14,9 @@
   --signal:     #C5305A;
   --signal-dim: rgba(197, 48, 90, 0.10);
 
-  --display: "Space Grotesk", system-ui, sans-serif;
-  --serif:   "Newsreader", Georgia, serif;
-  --mono:    "Space Mono", ui-monospace, monospace;
+  --display: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:   "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:    "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   --measure: 65ch;
 }
