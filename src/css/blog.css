@@ -266,6 +266,8 @@ blockquote {
 }
 
 @media (max-width: 600px) {
+  .blog-head { padding-top: 3rem; }
+  .article-header { padding-top: 3rem; }
   .callout { flex-direction: column; gap: 0.4rem; }
   .figure { margin: 2rem auto; }
 }
