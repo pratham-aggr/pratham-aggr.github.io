@@ -66,6 +66,7 @@ em { font-style: italic; }
 
 /* ---------- nav ---------- */
 header {
+  position: relative;
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
 }
