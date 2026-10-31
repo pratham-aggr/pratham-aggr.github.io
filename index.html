@@ -38,12 +38,12 @@
           My research asks one question: can inexpensive, targeted interventions make neural climate
           surrogates both fast and physically faithful? At the Climate Analytics Lab within Scripps
           Institution of Oceanography, under Duncan Watson-Parris, I built
-          <strong>FASST</strong> — a compact atmosphere emulator that runs ~18× faster than larger
+          <strong>FASST</strong>, a compact atmosphere emulator that runs ~18× faster than larger
           autoregressive models and stays stable over a 140-year ocean-coupled simulation. Fast
           surrogates like these tend to lose physical variability, such as ENSO, when trained on MSE
-          alone; I study low-cost fixes — stochastic fine-tuning and probing &amp; steering a model's
-          internal representations — drawing on my work steering language models at inference time in
-          the Belkin Lab. My long-term goal is to build efficient, trustworthy ML models for
+          alone. I study low-cost fixes such as stochastic fine-tuning and probing &amp; steering of a
+          model's internal representations, drawing on my work steering language models at inference
+          time in the Belkin Lab. My long-term goal is to build efficient, trustworthy ML models for
           atmospheric and ocean science.
         </p>
         <div class="hero-actions">
@@ -67,7 +67,7 @@
         One question organizes my work: can <em>inexpensive, targeted interventions</em> make neural
         climate surrogates both fast and physically faithful? Fast emulators cut the cost of running
         large climate ensembles, but trained on standard losses they quietly drop the physics that
-        matters. I study cheap, inference-time ways to put it back — without the cost of retraining.
+        matters. I study cheap, inference-time ways to put it back, without the cost of retraining.
       </p>
 
       <div class="timeline">
@@ -78,14 +78,14 @@
             <span class="entry-role">ML Researcher</span>
           </div>
           <div class="entry-body">
-            <h3>FASST — a compact atmosphere emulator for ocean coupling</h3>
+            <h3>FASST: a compact atmosphere emulator for ocean coupling</h3>
             <p>
               Built <strong>FASST</strong>, a compact, non-autoregressive atmosphere emulator
               (7.7M parameters) coupled to the physics-based POP2 ocean. Its atmospheric inference
               runs ~18× faster than CAMulator, a 751M-parameter autoregressive emulator, and the
               coupled model stays stable over a 140-year simulation without SST restoring. Trained on
-              MSE alone it reproduces damped ENSO variability and a cold bias in the tropical Pacific
-              — the gap between strong regression skill and physical fidelity that now drives my work
+              MSE alone it reproduces damped ENSO variability and a cold bias in the tropical Pacific.
+              That gap between strong regression skill and physical fidelity now drives my work
               on inexpensive interventions to recover lost variability.
             </p>
             <ul class="tags">
@@ -105,12 +105,12 @@
             <span class="entry-role">HDSI Scholar</span>
           </div>
           <div class="entry-body">
-            <h3>ClimateBench 2.0 — benchmarking climate models fairly</h3>
+            <h3>ClimateBench 2.0: benchmarking climate models fairly</h3>
             <p>
               With Willa Tobin, under Duncan Watson-Parris, contributed to ClimateBench 2.0, an
               architecture-independent framework for evaluating physics-based and machine-learning
               climate models on a common set of predictive-skill metrics. Benchmarked 14 CMIP6 models
-              across MAE, RMSE, and CRPS — a hands-on lesson that no single headline number captures
+              across MAE, RMSE, and CRPS, a hands-on lesson that no single headline number captures
               skill, and that a model topping one metric can fail on another. Built efficient,
               at-scale preprocessing for NetCDF, Zarr, GRIB, and GeoTIFF data streamed from Google
               Cloud; work recognized with a <strong>$4,500 research scholarship</strong>.
@@ -132,7 +132,7 @@
             <span class="entry-role">ML Researcher</span>
           </div>
           <div class="entry-body">
-            <h3>Inference-time steering — a transferable fix for surrogates</h3>
+            <h3>Inference-time steering: a transferable fix for surrogates</h3>
             <p>
               A surrogate with high R² can still get the physics wrong, and retraining it for every
               flaw is costly and often counterproductive. With Dr. Qingsong Wang, I extracted
@@ -186,9 +186,9 @@
           <p>
             Used activation steering to enforce structured outputs in an autonomous AI agent, and
             built an NLP pipeline extracting goals, tasks, participants, and deadlines from meeting
-            transcripts at 88% agreement with human labels — automated scheduling that cut manual
-            effort 60% with 95% successful confirmations. Containerized with Docker, deployed on
-            Kubernetes.
+            transcripts at 88% agreement with human labels, plus automated scheduling that cut
+            manual effort 60% with 95% successful confirmations. Containerized with Docker, deployed
+            on Kubernetes.
           </p>
           <p class="card-meta">steering · NLP · Docker · Kubernetes · 2026</p>
         </article>
@@ -214,8 +214,8 @@
       <p class="eyebrow">news</p>
       <h2 class="block-title">Recent.</h2>
       <ul class="news">
-        <li><span class="news-date">2026</span><span class="news-item"><strong>FASST</strong> accepted at the <strong>NeurIPS 2026</strong> Tackling Climate Change with ML workshop — a compact atmosphere emulator for long-term ocean coupling.</span></li>
-        <li><span class="news-date">2026</span><span class="news-item">Joined the <strong>Belkin Lab</strong>, working on inference-time steering of model activations — a method I'm bringing to climate surrogates.</span></li>
+        <li><span class="news-date">2026</span><span class="news-item"><strong>FASST</strong> accepted at the <strong>NeurIPS 2026</strong> Tackling Climate Change with ML workshop: a compact atmosphere emulator for long-term ocean coupling.</span></li>
+        <li><span class="news-date">2026</span><span class="news-item">Joined the <strong>Belkin Lab</strong>, working on inference-time steering of model activations, a method I'm bringing to climate surrogates.</span></li>
         <li><span class="news-date">2026</span><span class="news-item">Wrote up a deep dive on <a href="/blog/how-a-10-neuron-network-serves-100-features.html">how a 10-neuron network serves 100 features</a>, a hands-on look at superposition.</span></li>
         <li><span class="news-date">Jan 2026</span><span class="news-item"><strong>1st place</strong> at HackML (NSF HDR ML Challenge), coastal-flooding prediction (0.94 F1).</span></li>
         <li><span class="news-date">2025</span><span class="news-item">Awarded a <strong>$4,500 research scholarship</strong> at Scripps for work on ClimateBench 2.0.</span></li>

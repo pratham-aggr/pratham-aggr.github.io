@@ -1,4 +1,4 @@
-// Pratham Aggarwal — academic homepage
+// Pratham Aggarwal, academic homepage
 // Signature: hero text resolves from noise into signal, echoing the
 // clean field a climate surrogate recovers from a noisy forecast.
 

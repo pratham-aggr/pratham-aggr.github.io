@@ -1,5 +1,5 @@
 /* ============================================================
-   Blog — long-form reading layer on top of index.css tokens.
+   Blog: long-form reading layer on top of index.css tokens.
    Reuses :root variables, fonts, nav, footer from index.css.
    ============================================================ */
 
@@ -118,7 +118,7 @@
 .prose p {
   font-size: 1.16rem;
   line-height: 1.66;
-  color: #23232b;
+  color: var(--prose-ink);
   margin-bottom: 1.5rem;
 }
 .prose p .lead-cap::first-letter { font-size: 1.1em; }
@@ -151,7 +151,7 @@
   margin-bottom: 0.8rem;
 }
 .prose ul, .prose ol { margin-bottom: 1.5rem; padding-left: 1.3rem; }
-.prose li { font-size: 1.12rem; line-height: 1.6; margin-bottom: 0.5rem; color: #23232b; }
+.prose li { font-size: 1.12rem; line-height: 1.6; margin-bottom: 0.5rem; color: var(--prose-ink); }
 
 .prose code {
   font-family: var(--mono);
@@ -184,7 +184,7 @@ blockquote {
   border: 1px solid var(--rule);
   border-left: 3px solid var(--signal);
   border-radius: 4px;
-  background: #fff;
+  background: var(--surface);
 }
 .callout .big {
   font-family: var(--display);
@@ -202,7 +202,7 @@ blockquote {
   line-height: 1.4;
 }
 
-/* figures — allowed to break out wider than the reading column */
+/* figures: allowed to break out wider than the reading column */
 .figure {
   margin: 2.8rem auto;
   max-width: 56rem;

@@ -1,18 +1,24 @@
 /* ============================================================
-   Pratham Aggarwal — academic homepage
+   Pratham Aggarwal, academic homepage
    Type: Geist (display + body) · Geist Mono (labels / data)
    Theme: signal emerging from noise. Signal = plasma-colormap magenta.
    ============================================================ */
 
 :root {
-  --paper:      #FAFAF8;
-  --paper-2:    #F2F1EC;
-  --ink:        #16161D;
-  --ink-soft:   #4A4A57;
-  --rule:       #E6E5E0;
-  --mask:       #C9C9CF;
-  --signal:     #C5305A;
-  --signal-dim: rgba(197, 48, 90, 0.10);
+  color-scheme: light;
+
+  --paper:         #FAFAF8;
+  --paper-2:       #F2F1EC;
+  --surface:       #FFFFFF;
+  --ink:           #16161D;
+  --ink-soft:      #4A4A57;
+  --prose-ink:     #23232B;
+  --rule:          #E6E5E0;
+  --mask:          #C9C9CF;
+  --signal:        #C5305A;
+  --signal-strong: #A8254A;
+  --signal-dim:    rgba(197, 48, 90, 0.10);
+  --on-signal:     #FFFFFF;
 
   --display: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif:   "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -23,7 +29,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--paper); }
 
 body {
   font-family: var(--serif);
@@ -42,11 +48,33 @@ body {
   padding: 0 2rem;
 }
 
+/* breathing room when jumping to an anchored section */
+main section[id] { scroll-margin-top: 1.5rem; }
+
 a { color: var(--signal); text-decoration: none; }
 strong { font-weight: 600; color: var(--ink); }
 em { font-style: italic; }
 
-::selection { background: var(--signal); color: #fff; }
+/* inline links inside running prose get a quiet underline so they
+   read as links beyond color alone; nav/buttons opt out on their own */
+.hero-lede a,
+.block-intro a,
+.entry-body p a,
+.card p a,
+.news-item a {
+  text-decoration: underline;
+  text-decoration-color: var(--mask);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.18s ease;
+}
+.hero-lede a:hover,
+.block-intro a:hover,
+.entry-body p a:hover,
+.card p a:hover,
+.news-item a:hover { text-decoration-color: var(--signal); }
+
+::selection { background: var(--signal); color: var(--on-signal); }
 
 :focus-visible {
   outline: 2px solid var(--signal);
@@ -176,11 +204,11 @@ header {
 .btn-signal {
   background: var(--signal);
   border-color: var(--signal);
-  color: #fff;
+  color: var(--on-signal);
 }
-.btn-signal:hover { background: #a8254a; border-color: #a8254a; color: #fff; }
+.btn-signal:hover { background: var(--signal-strong); border-color: var(--signal-strong); color: var(--on-signal); }
 
-/* portrait — grayscale (noise) resolves to color (signal) on hover */
+/* portrait: grayscale (noise) resolves to color (signal) on hover */
 .portrait { margin: 0; }
 .portrait img {
   width: 100%;
@@ -289,7 +317,7 @@ header {
   border: 1px solid var(--rule);
   border-radius: 4px;
   padding: 1.6rem;
-  background: #fff;
+  background: var(--surface);
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .card:hover { border-color: var(--ink); transform: translateY(-3px); }
