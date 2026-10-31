@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pratham Aggarwal · Machine Learning Researcher</title>
-  <meta name="description" content="Pratham Aggarwal, machine learning researcher at UC San Diego working on controllable generation in diffusion models (Belkin Lab, Scripps). Applying to Ph.D. programs in ML.">
+  <title>Pratham Aggarwal · Machine Learning for Climate Science</title>
+  <meta name="description" content="Pratham Aggarwal, machine learning researcher at UC San Diego building fast, physically faithful neural climate surrogates (Climate Analytics Lab, Scripps). Author of FASST. Applying to Ph.D. programs in Data Science.">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,16 +33,18 @@
     <section class="hero container">
       <div class="hero-text">
         <h1 class="hero-name" data-unmask><span aria-hidden="true">Pratham Aggarwal</span></h1>
-        <p class="hero-tagline" data-unmask data-unmask-delay="520"><span aria-hidden="true">controllable generation in diffusion models</span></p>
+        <p class="hero-tagline" data-unmask data-unmask-delay="520"><span aria-hidden="true">fast, physically faithful neural climate surrogates</span></p>
         <p class="hero-lede">
-          My research focuses on generative modeling, with an emphasis on understanding and controlling model 
-          behavior at inference time. At UC San Diego's Belkin Lab, I investigate controllable generation 
-          in masked diffusion language models, developing activation-steering methods and token-selection 
-          strategies that guide generation without retraining. At the Climate Analytics Lab within Scripps 
-          Institution of Oceanography, under the supervision of Duncan Watson-Parris, I develop 
-          diffusion-based climate models for ensemble forecasting and Earth system emulation, 
-          enabling faster uncertainty-aware climate simulations. More broadly, I am interested in the 
-          foundations of controllable AI and the development of generative models for scientific discovery.
+          My research asks one question: can inexpensive, targeted interventions make neural climate
+          surrogates both fast and physically faithful? At the Climate Analytics Lab within Scripps
+          Institution of Oceanography, under Duncan Watson-Parris, I built
+          <strong>FASST</strong> — a compact atmosphere emulator that runs ~18× faster than larger
+          autoregressive models and stays stable over a 140-year ocean-coupled simulation. Fast
+          surrogates like these tend to lose physical variability, such as ENSO, when trained on MSE
+          alone; I study low-cost fixes — stochastic fine-tuning and probing &amp; steering a model's
+          internal representations — drawing on my work steering language models at inference time in
+          the Belkin Lab. My long-term goal is to build efficient, trustworthy ML models for
+          atmospheric and ocean science.
         </p>
         <div class="hero-actions">
           <a class="btn btn-signal" href="assets/resume.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
@@ -60,58 +62,61 @@
     <!-- Research vision + entries -->
     <section id="research" class="block container">
       <p class="eyebrow">research</p>
-      <h2 class="block-title">Steering what generative models produce.</h2>
+      <h2 class="block-title">Making neural climate surrogates fast and physically faithful.</h2>
       <p class="block-intro">
-        One question runs through my work: once a model can generate, how do we control
-        <em>what</em> it generates, precisely, at inference time, without retraining?
-        I approach it from two sides, language and physical systems, with diffusion and
-        masked-diffusion models as the shared substrate.
+        One question organizes my work: can <em>inexpensive, targeted interventions</em> make neural
+        climate surrogates both fast and physically faithful? Fast emulators cut the cost of running
+        large climate ensembles, but trained on standard losses they quietly drop the physics that
+        matters. I study cheap, inference-time ways to put it back — without the cost of retraining.
       </p>
 
       <div class="timeline">
         <article class="entry">
           <div class="entry-meta">
-            <span class="entry-date">2026–present</span>
-            <span class="entry-venue">Belkin Lab, UC San Diego</span>
+            <span class="entry-date">2025–present</span>
+            <span class="entry-venue">Climate Analytics Lab, Scripps</span>
             <span class="entry-role">ML Researcher</span>
           </div>
           <div class="entry-body">
-            <h3>Controllable generation in masked diffusion language models</h3>
+            <h3>FASST — a compact atmosphere emulator for ocean coupling</h3>
             <p>
-              Investigating controllable generation in masked diffusion language models
-              (MDLMs) through inference-time unmasking, and developing masking-aware
-              activation-steering methods for partially observed sequences. Benchmarking
-              token-selection strategies (margin, entropy, saliency, and concept-directed)
-              for controllability and text quality, measured with perplexity, MAUVE, and
-              classifier-based metrics on the LLaDA codebase.
+              Built <strong>FASST</strong>, a compact, non-autoregressive atmosphere emulator
+              (7.7M parameters) coupled to the physics-based POP2 ocean. Its atmospheric inference
+              runs ~18× faster than CAMulator, a 751M-parameter autoregressive emulator, and the
+              coupled model stays stable over a 140-year simulation without SST restoring. Trained on
+              MSE alone it reproduces damped ENSO variability and a cold bias in the tropical Pacific
+              — the gap between strong regression skill and physical fidelity that now drives my work
+              on inexpensive interventions to recover lost variability.
             </p>
             <ul class="tags">
-              <li>MDLM</li><li>activation steering</li><li>LLaDA</li><li>controllability</li>
+              <li>atmosphere emulator</li><li>POP2 coupling</li><li>ENSO</li><li>physical fidelity</li>
             </ul>
+            <p class="entry-links">
+              <a href="https://arxiv.org/abs/2610.36297" target="_blank" rel="noopener">paper (arXiv) ↗</a>
+              <span>NeurIPS 2026 · Tackling Climate Change with ML workshop</span>
+            </p>
           </div>
         </article>
 
         <article class="entry">
           <div class="entry-meta">
-            <span class="entry-date">2025–present</span>
-            <span class="entry-venue">Scripps Institution of Oceanography</span>
-            <span class="entry-role">ML Researcher</span>
+            <span class="entry-date">2024–2025</span>
+            <span class="entry-venue">Climate Analytics Lab, Scripps</span>
+            <span class="entry-role">HDSI Scholar</span>
           </div>
           <div class="entry-body">
-            <h3>Neural climate surrogates &amp; diffusion ensembles</h3>
+            <h3>ClimateBench 2.0 — benchmarking climate models fairly</h3>
             <p>
-              Built a neural climate-modeling pipeline that runs ~20× faster than
-              state-of-the-art by coupling a lightweight UNet with an ocean emulator,
-              holding prediction accuracy across a 40-year autoregressive rollout. Trained
-              a conditional diffusion model (DDPM) on 155 years of simulation to generate
-              20–50-member ensembles per timestep, recovering distributional extremes and
-              fine spatial structure that regression baselines lose. Deployed a full-stack
-              ML evaluation platform on GCP benchmarking 500+ model outputs with 20+ custom
-              metrics, work that earned a <strong>$4,500 scholarship</strong> for
-              interpretability tooling.
+              With Willa Tobin, under Duncan Watson-Parris, contributed to ClimateBench 2.0, an
+              architecture-independent framework for evaluating physics-based and machine-learning
+              climate models on a common set of predictive-skill metrics. Benchmarked 14 CMIP6 models
+              across MAE, RMSE, and CRPS — a hands-on lesson that no single headline number captures
+              skill, and that a model topping one metric can fail on another. Built efficient,
+              at-scale preprocessing for NetCDF, Zarr, GRIB, and GeoTIFF data streamed from Google
+              Cloud; work recognized with a <strong>$4,500 research scholarship</strong>.
             </p>
             <ul class="tags">
-              <li>diffusion (DDPM)</li><li>UNet surrogate</li><li>ensembles</li><li>GCP</li>
+              <li>CMIP6</li><li>CRPS / RMSE</li><li>xarray / Zarr</li><li>GCP</li>
             </ul>
             <p class="entry-links">
               <a href="https://climate-analytics-lab.github.io/ClimateBench_app/index.html" target="_blank" rel="noopener">evaluation platform ↗</a>
@@ -122,42 +127,23 @@
 
         <article class="entry">
           <div class="entry-meta">
-            <span class="entry-date">2025</span>
-            <span class="entry-venue">Existential Robotics Lab, UC San Diego</span>
-            <span class="entry-role">Research Assistant</span>
+            <span class="entry-date">2026</span>
+            <span class="entry-venue">Belkin Lab, UC San Diego</span>
+            <span class="entry-role">ML Researcher</span>
           </div>
           <div class="entry-body">
-            <h3>Motion planning under uncertainty</h3>
+            <h3>Inference-time steering — a transferable fix for surrogates</h3>
             <p>
-              Benchmarked and optimized motion-planning algorithms (A*, RRT, MPC), cutting
-              path-planning failures 28% while keeping average trajectory error below 0.15 m
-              in dynamic environments. Strengthened PyBullet simulation pipelines for mapping
-              and localization across 100+ trials, and sped up simulation 2.1× to test 10+
-              planners concurrently.
+              A surrogate with high R² can still get the physics wrong, and retraining it for every
+              flaw is costly and often counterproductive. With Dr. Qingsong Wang, I extracted
+              topic-specific refusal directions from LLaDA-8B's internal activations to steer its
+              behavior at inference time, without retraining; in my capstone (DSC 180A/B) with
+              Professor Weng I extended this to make refusals explainable. I now want to carry this
+              idea to climate: probing and steering FASST's internal representations to recover ENSO
+              variability lost during training, while preserving long-term coupled stability.
             </p>
             <ul class="tags">
-              <li>A*</li><li>RRT</li><li>MPC</li><li>PyBullet</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="entry-meta">
-            <span class="entry-date">2025</span>
-            <span class="entry-venue">SFIC Quantitative Technologies</span>
-            <span class="entry-role">Quantitative Researcher</span>
-          </div>
-          <div class="entry-body">
-            <h3>Sequential decision-making for options</h3>
-            <p>
-              Developed a deep-learning agent with adaptive policy learning and
-              early-exercise strategies that improved simulated options-trading returns 12%
-              for a $1.3M student-run fund. A sequential decision step dynamically selected
-              option type, expiration, and exercise timing from time-series data; an LSTM
-              trained on five years of market data reached 0.96 MSE on price prediction.
-            </p>
-            <ul class="tags">
-              <li>deep RL</li><li>LSTM</li><li>time series</li>
+              <li>activation steering</li><li>LLaDA</li><li>probing</li><li>interpretability</li>
             </ul>
           </div>
         </article>
@@ -171,14 +157,15 @@
 
       <div class="cards">
         <article class="card">
-          <p class="card-tag award">1st place · NSF / CERN hackathon</p>
+          <p class="card-tag award">1st place · HackML · NSF HDR ML Challenge</p>
           <h3>Coastal-flooding risk prediction</h3>
           <p>
-            Built and compared ML models for coastal-flooding risk; selected CatBoost as
-            the top approach and reached a <strong>0.94 F1</strong> on the final CodaBench
-            benchmark through feature engineering on large-scale data.
+            Winning entry at HackML (UCSD SMASH, NSF HDR ML Challenge). Because floods are rare, I
+            evaluated on precision, recall, and F1 rather than accuracy; across 30+ documented
+            experiments a <strong>CatBoost–XGBoost ensemble</strong> performed best, reaching a
+            <strong>0.94 F1</strong> on the final benchmark.
           </p>
-          <p class="card-meta">CatBoost · feature engineering · Jan 2026</p>
+          <p class="card-meta">CatBoost · XGBoost · feature engineering · Jan 2026</p>
         </article>
 
         <article class="card">
@@ -194,15 +181,16 @@
         </article>
 
         <article class="card">
-          <p class="card-tag">Internship</p>
-          <h3>NLP for meetings · NIOV Labs</h3>
+          <p class="card-tag">Internship · NIOV Labs</p>
+          <h3>Steering an autonomous AI agent</h3>
           <p>
-            System extracting goals, tasks, participants, and deadlines from meeting
-            transcripts at 88% agreement with human labels; automated scheduling cut manual
-            effort 60% with 95% successful confirmations. Containerized with Docker, deployed
-            on Kubernetes.
+            Used activation steering to enforce structured outputs in an autonomous AI agent, and
+            built an NLP pipeline extracting goals, tasks, participants, and deadlines from meeting
+            transcripts at 88% agreement with human labels — automated scheduling that cut manual
+            effort 60% with 95% successful confirmations. Containerized with Docker, deployed on
+            Kubernetes.
           </p>
-          <p class="card-meta">NLP · Docker · Kubernetes · 2026</p>
+          <p class="card-meta">steering · NLP · Docker · Kubernetes · 2026</p>
         </article>
 
         <article class="card">
@@ -226,12 +214,13 @@
       <p class="eyebrow">news</p>
       <h2 class="block-title">Recent.</h2>
       <ul class="news">
+        <li><span class="news-date">2026</span><span class="news-item"><strong>FASST</strong> accepted at the <strong>NeurIPS 2026</strong> Tackling Climate Change with ML workshop — a compact atmosphere emulator for long-term ocean coupling.</span></li>
+        <li><span class="news-date">2026</span><span class="news-item">Joined the <strong>Belkin Lab</strong>, working on inference-time steering of model activations — a method I'm bringing to climate surrogates.</span></li>
         <li><span class="news-date">2026</span><span class="news-item">Wrote up a deep dive on <a href="/blog/how-a-10-neuron-network-serves-100-features.html">how a 10-neuron network serves 100 features</a>, a hands-on look at superposition.</span></li>
-        <li><span class="news-date">2026</span><span class="news-item">Joined the <strong>Belkin Lab</strong> to work on controllable generation in masked diffusion language models.</span></li>
-        <li><span class="news-date">Jan 2026</span><span class="news-item"><strong>1st place</strong> at the NSF / CERN-hosted hackathon, coastal-flooding prediction (0.94 F1).</span></li>
-        <li><span class="news-date">2025</span><span class="news-item">Awarded a <strong>$4,500 research scholarship</strong> at Scripps for ML interpretability tooling.</span></li>
+        <li><span class="news-date">Jan 2026</span><span class="news-item"><strong>1st place</strong> at HackML (NSF HDR ML Challenge), coastal-flooding prediction (0.94 F1).</span></li>
+        <li><span class="news-date">2025</span><span class="news-item">Awarded a <strong>$4,500 research scholarship</strong> at Scripps for work on ClimateBench 2.0.</span></li>
         <li><span class="news-date">Jun 2025</span><span class="news-item"><strong>1st place</strong> at Hackfrontier, homeless-services computer-vision platform.</span></li>
-        <li><span class="news-date">2025</span><span class="news-item">Began ML research at <strong>Scripps</strong> on neural climate modeling and diffusion ensembles.</span></li>
+        <li><span class="news-date">2024</span><span class="news-item">Began ML research at the <strong>Climate Analytics Lab</strong>, Scripps, benchmarking and building neural climate models.</span></li>
       </ul>
     </section>
 
@@ -241,8 +230,8 @@
       <h2 class="block-title">Let's talk research.</h2>
       <p class="block-intro">
         I'm happy to hear from prospective advisors, collaborators, and anyone working on
-        controllable generation, diffusion models, or scientific ML. The fastest way to reach
-        me is email.
+        neural climate surrogates, ML for atmospheric and ocean science, or inference-time
+        model steering. The fastest way to reach me is email.
       </p>
       <p class="contact-row">
         <a href="mailto:praggarwal@ucsd.edu">praggarwal@ucsd.edu</a>
@@ -250,8 +239,8 @@
         <a href="https://www.linkedin.com/in/pratham-agg" target="_blank" rel="noopener">linkedin.com/in/pratham-agg</a>
       </p>
       <p class="toolkit">
-        toolkit: PyTorch · TensorFlow · scikit-learn · diffusion models · Python / C++ / Java ·
-        GCP · Docker · Kubernetes · Git
+        toolkit: PyTorch · JAX · xarray · NetCDF / Zarr / GRIB · climate emulators · diffusion models ·
+        scikit-learn · Python / C++ / Java · GCP · Docker · Kubernetes · Git
       </p>
     </section>
   </main>

@@ -1,7 +1,7 @@
 /* ============================================================
    Pratham Aggarwal — academic homepage
    Type: Geist (display + body) · Geist Mono (labels / data)
-   Theme: denoising / unmasking. Signal = plasma-colormap magenta.
+   Theme: signal emerging from noise. Signal = plasma-colormap magenta.
    ============================================================ */
 
 :root {
@@ -257,8 +257,11 @@ header {
   font-family: var(--mono);
   font-size: 0.8rem;
   display: flex;
-  gap: 1.4rem;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  align-items: baseline;
 }
+.entry-links span { color: var(--ink-soft); }
 .tags {
   list-style: none;
   display: block;

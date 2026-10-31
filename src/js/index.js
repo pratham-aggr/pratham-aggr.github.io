@@ -1,6 +1,6 @@
 // Pratham Aggarwal — academic homepage
-// Signature: hero text "unmasks" from noise, echoing inference-time
-// unmasking in masked diffusion language models.
+// Signature: hero text resolves from noise into signal, echoing the
+// clean field a climate surrogate recovers from a noisy forecast.
 
 (function () {
   'use strict';
