@@ -1,7 +1,7 @@
 /* ============================================================
    Pratham Aggarwal, academic homepage
    Type: Geist (display + body) · Geist Mono (labels / data)
-   Theme: signal emerging from noise. Signal = plasma-colormap magenta.
+   Theme: signal emerging from noise. Signal = ocean blue.
    ============================================================ */
 
 :root {
@@ -15,9 +15,9 @@
   --prose-ink:     #23232B;
   --rule:          #E6E5E0;
   --mask:          #C9C9CF;
-  --signal:        #C5305A;
-  --signal-strong: #A8254A;
-  --signal-dim:    rgba(197, 48, 90, 0.10);
+  --signal:        #308DC5;
+  --signal-strong: #26729F;
+  --signal-dim:    rgba(48, 141, 197, 0.10);
   --on-signal:     #FFFFFF;
 
   --display: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
